@@ -28,7 +28,7 @@ async function getWeather(longitude, latitude) {
   console.log(jsonData);
   var wc = jsonData.current_weather.weathercode;
   if (wc == 0) {
-    weatherImg.src = "/imgs/sunny.png";
+    weatherImg.src = "imgs/sunny.png";
     description.innerHTML = `Sunny`;
   } else if (wc == 1 || wc == 2 || wc == 3) {
     weatherImg.src = "/imgs/cloudy.png";
